@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+      "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tongzhuogame.iblog.mapper.TagMapper">
+   
+   <select id="list" resultType="MapContainer">  
+      select name, count(*) as count from tag group by name order by createTime desc
+   </select>
+   
+   <select id="getTagsByPost" parameterType="java.lang.String" resultType="java.lang.String">
+     select name from tag where postId=#{postId}
+   </select>
+   
+   <insert id="insertBatch" parameterType="java.util.List">
+      insert into tag(id,name,postId,createTime) values
+      <foreach collection="list" item="item" separator=",">
+        (#{item.id}, #{item.name}, #{item.postId}, #{item.createTime})
+      </foreach>
+   </insert>
+   
+   <delete id="deleteByPostId" parameterType="java.lang.String">
+     delete from tag where postId=#{postId}
+   </delete>
+   
+   <delete id="deleteById"  parameterType="java.lang.String">
+   	delete from tag where id=#{id}
+   </delete>
+	
+</mapper>

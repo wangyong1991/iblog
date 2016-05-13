@@ -1,0 +1,107 @@
+DEBUG 2016/05/01 12:53:32 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:16:24 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:17:50 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:31:37 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:32:24 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:40:28 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:45:34 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:48:30 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 13:49:38 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 14:29:37 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 14:29:38 DEBUG insert:142 - ==>  Preparing: insert into user(id,nickName,realName,password,email,role,status,description,createTime,creator,lastUpdate) values(?,?,?,md5(?),?,?,?,?,?,?,?) 
+DEBUG 2016/05/01 14:29:38 DEBUG insert:142 - ==> Parameters: zhangsan(String), zhangsan(String), 张三(String), 123456(String), zhangsan@tongzhuogame.com(String), editor(String), N(String), 真的爱你.......(String), 2016-05-01 14:29:38.137(Timestamp), admin(String), 2016-05-01 14:29:38.137(Timestamp)
+DEBUG 2016/05/01 14:29:38 DEBUG insert:142 - <==    Updates: 1
+DEBUG 2016/05/01 14:31:13 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 14:31:14 DEBUG count:142 - ==>  Preparing: select count(*) from user 
+DEBUG 2016/05/01 14:31:14 DEBUG count:142 - ==> Parameters: 
+DEBUG 2016/05/01 14:31:14 DEBUG count:142 - <==      Total: 1
+DEBUG 2016/05/01 15:15:58 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:15:59 DEBUG loadById:142 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = ? 
+DEBUG 2016/05/01 15:15:59 DEBUG loadById:142 - ==> Parameters: adX5sfa87fVh(String)
+DEBUG 2016/05/01 15:15:59 DEBUG loadById:142 - <==      Total: 1
+DEBUG 2016/05/01 15:17:32 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:17:33 DEBUG loadById:142 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = ? 
+DEBUG 2016/05/01 15:17:33 DEBUG loadById:142 - ==> Parameters: adX5sfa87fVh(String)
+DEBUG 2016/05/01 15:17:33 DEBUG loadById:142 - <==      Total: 1
+DEBUG 2016/05/01 15:19:42 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:19:43 DEBUG update:142 - ==>  Preparing: update user set realName=?, email=?, description=? , role=? , password=md5(?) where id=? 
+DEBUG 2016/05/01 15:19:43 DEBUG update:142 - ==> Parameters: 张小三(String), zhangsan@tongzhuogame.com(String), 真的爱你.......(String), editor(String), 123456(String), adX5sfa87fVh(String)
+DEBUG 2016/05/01 15:19:43 DEBUG update:142 - <==    Updates: 1
+DEBUG 2016/05/01 15:20:32 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:20:33 DEBUG count:142 - ==>  Preparing: select count(*) from user 
+DEBUG 2016/05/01 15:20:33 DEBUG count:142 - ==> Parameters: 
+DEBUG 2016/05/01 15:20:33 DEBUG count:142 - <==      Total: 1
+DEBUG 2016/05/01 15:21:13 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:21:14 DEBUG deleteById:142 - ==>  Preparing: delete from user where id = ? 
+DEBUG 2016/05/01 15:21:14 DEBUG deleteById:142 - ==> Parameters: adX5sfa87fVh(String)
+DEBUG 2016/05/01 15:21:14 DEBUG deleteById:142 - <==    Updates: 1
+DEBUG 2016/05/01 15:21:27 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:21:28 DEBUG insert:142 - ==>  Preparing: insert into user(id,nickName,realName,password,email,role,status,description,createTime,creator,lastUpdate) values(?,?,?,md5(?),?,?,?,?,?,?,?) 
+DEBUG 2016/05/01 15:21:28 DEBUG insert:142 - ==> Parameters: adX5sfa87fVh(String), zhangsan(String), 张三(String), 123456(String), zhangsan@tongzhuogame.com(String), editor(String), N(String), 真的爱你.......(String), 2016-05-01 15:21:28.171(Timestamp), admin(String), 2016-05-01 15:21:28.171(Timestamp)
+DEBUG 2016/05/01 15:21:28 DEBUG insert:142 - <==    Updates: 1
+DEBUG 2016/05/01 15:22:48 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:22:48 DEBUG loadByNameAndPass:142 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where nickName = ? and password = md5(?) 
+DEBUG 2016/05/01 15:22:48 DEBUG loadByNameAndPass:142 - ==> Parameters: zhangsan(String), 123456(String)
+DEBUG 2016/05/01 15:22:48 DEBUG loadByNameAndPass:142 - <==      Total: 1
+DEBUG 2016/05/01 15:24:06 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:24:06 DEBUG list:142 - ==>  Preparing: select id, nickName, realName, role, email, createTime from user 
+DEBUG 2016/05/01 15:24:06 DEBUG list:142 - ==> Parameters: 
+DEBUG 2016/05/01 15:24:06 DEBUG list:142 - <==      Total: 1
+DEBUG 2016/05/01 15:29:50 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:31:16 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:31:16 DEBUG insert:142 - ==>  Preparing: insert into user(id,nickName,realName,password,email,role,status,description,createTime,creator,lastUpdate) values(?,?,?,md5(?),?,?,?,?,?,?,?) 
+DEBUG 2016/05/01 15:33:22 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:33:22 DEBUG insert:142 - ==>  Preparing: insert into upload(id,name,path,creator,createTime) values(?,?,?,?,?) 
+DEBUG 2016/05/01 15:33:22 DEBUG insert:142 - ==> Parameters: s6X9Ljs6(String), 哈哈(String), www.baidu.com(String), admin(String), 2016-05-01 15:33:22.533(Timestamp)
+DEBUG 2016/05/01 15:33:22 DEBUG insert:142 - <==    Updates: 1
+DEBUG 2016/05/01 15:36:12 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:36:13 DEBUG loadById:142 - ==>  Preparing: select id, postId, name, path, creator, createTime from upload where id = ? 
+DEBUG 2016/05/01 15:36:13 DEBUG loadById:142 - ==> Parameters: s6X9Ljs6(String)
+DEBUG 2016/05/01 15:36:13 DEBUG loadById:142 - <==      Total: 1
+DEBUG 2016/05/01 15:37:35 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:37:36 DEBUG list:142 - ==>  Preparing: select * from upload order by createTime desc 
+DEBUG 2016/05/01 15:37:36 DEBUG list:142 - ==> Parameters: 
+DEBUG 2016/05/01 15:37:36 DEBUG list:142 - <==      Total: 1
+DEBUG 2016/05/01 15:38:47 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:38:47 DEBUG listByPostId:142 - ==>  Preparing: select id, path from upload m where postId=? 
+DEBUG 2016/05/01 15:38:47 DEBUG listByPostId:142 - ==> Parameters: 8dGkj66S8d(String)
+DEBUG 2016/05/01 15:38:47 DEBUG listByPostId:142 - <==      Total: 1
+DEBUG 2016/05/01 15:40:38 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:40:38 DEBUG count:142 - ==>  Preparing: select count(*) from upload 
+DEBUG 2016/05/01 15:40:38 DEBUG count:142 - ==> Parameters: 
+DEBUG 2016/05/01 15:40:38 DEBUG count:142 - <==      Total: 1
+DEBUG 2016/05/01 15:42:50 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:42:50 DEBUG setNullPostId:142 - ==>  Preparing: update id="setNullPostid" parameterType="java.lang.String"> update upload set postId=null where postId=? 
+DEBUG 2016/05/01 15:42:50 DEBUG setNullPostId:142 - ==> Parameters: 8dGkj66S8d(String)
+DEBUG 2016/05/01 15:43:29 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:43:29 DEBUG setNullPostId:142 - ==>  Preparing: update upload set postId=null where postId=? 
+DEBUG 2016/05/01 15:43:29 DEBUG setNullPostId:142 - ==> Parameters: 8dGkj66S8d(String)
+DEBUG 2016/05/01 15:43:29 DEBUG setNullPostId:142 - <==    Updates: 1
+DEBUG 2016/05/01 15:45:34 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:45:34 DEBUG deleteById:142 - ==>  Preparing: delete from upload where id = ? 
+DEBUG 2016/05/01 15:45:34 DEBUG deleteById:142 - ==> Parameters: s6X9Ljs6(String)
+DEBUG 2016/05/01 15:45:34 DEBUG deleteById:142 - <==    Updates: 1
+DEBUG 2016/05/01 15:45:44 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:45:44 DEBUG deleteByPostId:142 - ==>  Preparing: delete from upload where postId = ? 
+DEBUG 2016/05/01 15:45:44 DEBUG deleteByPostId:142 - ==> Parameters: 8dGkj66S8d(String)
+DEBUG 2016/05/01 15:45:44 DEBUG deleteByPostId:142 - <==    Updates: 0
+DEBUG 2016/05/01 15:53:24 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:53:24 DEBUG insertBatch:142 - ==>  Preparing: insert into tag(id,name,postId,createTime) values (?, ?, ?, ?) , (?, ?, ?, ?) , (?, ?, ?, ?) 
+DEBUG 2016/05/01 15:53:24 DEBUG insertBatch:142 - ==> Parameters: tag0(String), Java(String), 8dGkj66S8d(String), 2016-05-01 15:53:24.455(Timestamp), tag1(String), Spring(String), 8dGkj66S8d(String), 2016-05-01 15:53:24.455(Timestamp), tag2(String), Mybatis(String), 8dGkj66S8d(String), 2016-05-01 15:53:24.455(Timestamp)
+DEBUG 2016/05/01 15:53:24 DEBUG insertBatch:142 - <==    Updates: 3
+DEBUG 2016/05/01 15:57:20 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:57:20 DEBUG list:142 - ==>  Preparing: select name, count(*) as count from tag group by name order by createTime desc 
+DEBUG 2016/05/01 15:57:20 DEBUG list:142 - ==> Parameters: 
+DEBUG 2016/05/01 15:57:20 DEBUG list:142 - <==      Total: 3
+DEBUG 2016/05/01 15:57:25 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:57:25 DEBUG getTagsByPost:142 - ==>  Preparing: select name from tag where postId=? 
+DEBUG 2016/05/01 15:57:25 DEBUG getTagsByPost:142 - ==> Parameters: 8dGkj66S8d(String)
+DEBUG 2016/05/01 15:57:25 DEBUG getTagsByPost:142 - <==      Total: 3
+DEBUG 2016/05/01 15:59:05 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:59:06 DEBUG deleteById:142 - ==>  Preparing: delete from tag where id=? 
+DEBUG 2016/05/01 15:59:06 DEBUG deleteById:142 - ==> Parameters: tag0(String)
+DEBUG 2016/05/01 15:59:06 DEBUG deleteById:142 - <==    Updates: 1
+DEBUG 2016/05/01 15:59:15 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG 2016/05/01 15:59:15 DEBUG deleteByPostId:142 - ==>  Preparing: delete from tag where postId=? 
+DEBUG 2016/05/01 15:59:15 DEBUG deleteByPostId:142 - ==> Parameters: 8dGkj66S8d(String)
+DEBUG 2016/05/01 15:59:15 DEBUG deleteByPostId:142 - <==    Updates: 2

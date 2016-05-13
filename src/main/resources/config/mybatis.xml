@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <typeAliases>
+    <!-- 给实体Bean一个别名 -->
+    <typeAlias alias="MapContainer" type="com.tongzhuogame.iblog.plugin.MapContainer" />
+    <typeAlias alias="PageModel" type="com.tongzhuogame.iblog.plugin.PageModel" />
+    
+    <typeAlias alias="User" type="com.tongzhuogame.iblog.entity.User" />
+    <typeAlias alias="Category" type="com.tongzhuogame.iblog.entity.Category" />
+    <typeAlias alias="Post" type="com.tongzhuogame.iblog.entity.Post" />
+    <typeAlias alias="Upload" type="com.tongzhuogame.iblog.entity.Upload" />
+    <typeAlias alias="Link" type="com.tongzhuogame.iblog.entity.Link" />
+    <typeAlias alias="Comment" type="com.tongzhuogame.iblog.entity.Comment" />
+    <typeAlias alias="Option" type="com.tongzhuogame.iblog.entity.Option" />
+    
+    <typeAlias alias="PostVO" type="com.tongzhuogame.iblog.service.vo.PostVO" />
+    <typeAlias alias="PageVO" type="com.tongzhuogame.iblog.service.vo.PageVO" />
+    <typeAlias alias="CommentVO" type="com.tongzhuogame.iblog.service.vo.CommentVO" />
+    <typeAlias alias="UploadVO" type="com.tongzhuogame.iblog.service.vo.UploadVO" />
+  </typeAliases>
+  <mappers>
+    <mapper resource="mybatis/UserMapper.xml" />
+    <mapper resource="mybatis/UploadMapper.xml" />
+    <mapper resource="mybatis/TagMapper.xml" />
+    <!-- 
+    <mapper resource="mybatis/CategoryMapper.xml" />
+    <mapper resource="mybatis/PostMapper.xml" />
+    <mapper resource="mybatis/LinkMapper.xml" />
+    <mapper resource="mybatis/CommentMapper.xml" />
+    <mapper resource="mybatis/OptionMapper.xml" />
+     -->
+  </mappers>
+</configuration>
