@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
       "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tongzhuogame.iblog.mapper.UserMapper">
+<mapper namespace="com.iblog.mapper.UserMapper">
 	<select id="loadById" parameterType="java.lang.String" resultType="User">
 		select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = #{id}
 	</select>

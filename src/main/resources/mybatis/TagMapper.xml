@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>  
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
       "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tongzhuogame.iblog.mapper.TagMapper">
+<mapper namespace="com.iblog.mapper.TagMapper">
    
    <select id="list" resultType="MapContainer">  
       select name, count(*) as count from tag group by name order by createTime desc

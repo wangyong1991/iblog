@@ -20,6 +20,10 @@ public final class Constants{
   public static final String COOKIE_CONTEXT_ID = "c_id";
   public static final String COOKIE_USER_NAME = "un";
 
+  public static final String COOKIE_COMMENT_AUTHOR = "comment_author";
+  public static final String COOKIE_COMMENT_AUTHOR_EMAIL = "comment_author_email";
+  public static final String COOKIE_COMMENT_AUTHOR_URL = "comment_author_url";
+  
   /**
    * csrf表单提交token名称
    */

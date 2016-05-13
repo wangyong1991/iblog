@@ -1,4 +1,4 @@
-package com.tongzhuogame.iblog.mapper;
+package com.iblog.mapper;
 
 import static org.junit.Assert.*;
 

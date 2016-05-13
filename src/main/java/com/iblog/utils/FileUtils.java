@@ -5,9 +5,10 @@ import java.util.Arrays;
 
 /**
  * 文件工具类
- * 
- * @author zhou
- * 
+ * @author &#x738B;&#x52C7;
+ * @iblog
+ * @version 0.0.1-SNAPSHOT
+ * @since 0.0.1-SNAPSHOT
  */
 public class FileUtils{
 

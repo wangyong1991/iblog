@@ -4,21 +4,21 @@
 <configuration>
   <typeAliases>
     <!-- 给实体Bean一个别名 -->
-    <typeAlias alias="MapContainer" type="com.tongzhuogame.iblog.plugin.MapContainer" />
-    <typeAlias alias="PageModel" type="com.tongzhuogame.iblog.plugin.PageModel" />
+    <typeAlias alias="MapContainer" type="com.iblog.plugin.MapContainer" />
+    <typeAlias alias="PageModel" type="com.iblog.plugin.PageModel" />
     
-    <typeAlias alias="User" type="com.tongzhuogame.iblog.entity.User" />
-    <typeAlias alias="Category" type="com.tongzhuogame.iblog.entity.Category" />
-    <typeAlias alias="Post" type="com.tongzhuogame.iblog.entity.Post" />
-    <typeAlias alias="Upload" type="com.tongzhuogame.iblog.entity.Upload" />
-    <typeAlias alias="Link" type="com.tongzhuogame.iblog.entity.Link" />
-    <typeAlias alias="Comment" type="com.tongzhuogame.iblog.entity.Comment" />
-    <typeAlias alias="Option" type="com.tongzhuogame.iblog.entity.Option" />
+    <typeAlias alias="User" type="com.iblog.entity.User" />
+    <typeAlias alias="Category" type="com.iblog.entity.Category" />
+    <typeAlias alias="Post" type="com.iblog.entity.Post" />
+    <typeAlias alias="Upload" type="com.iblog.entity.Upload" />
+    <typeAlias alias="Link" type="com.iblog.entity.Link" />
+    <typeAlias alias="Comment" type="com.iblog.entity.Comment" />
+    <typeAlias alias="Option" type="com.iblog.entity.Option" />
     
-    <typeAlias alias="PostVO" type="com.tongzhuogame.iblog.service.vo.PostVO" />
-    <typeAlias alias="PageVO" type="com.tongzhuogame.iblog.service.vo.PageVO" />
-    <typeAlias alias="CommentVO" type="com.tongzhuogame.iblog.service.vo.CommentVO" />
-    <typeAlias alias="UploadVO" type="com.tongzhuogame.iblog.service.vo.UploadVO" />
+    <typeAlias alias="PostVO" type="com.iblog.service.vo.PostVO" />
+    <typeAlias alias="PageVO" type="com.iblog.service.vo.PageVO" />
+    <typeAlias alias="CommentVO" type="com.iblog.service.vo.CommentVO" />
+    <typeAlias alias="UploadVO" type="com.iblog.service.vo.UploadVO" />
   </typeAliases>
   <mappers>
     <mapper resource="mybatis/UserMapper.xml" />

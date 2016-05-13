@@ -14,6 +14,18 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
+	<!-- 登录过滤 -->
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.iblog.filter.LoginFilter</filter-class>
+		<async-supported>true</async-supported>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<servlet-name>iblog</servlet-name>
+	</filter-mapping>
 
 	<servlet>
 		<servlet-name>iblog</servlet-name>

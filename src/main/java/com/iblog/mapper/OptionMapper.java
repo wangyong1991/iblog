@@ -4,7 +4,7 @@ import com.iblog.entity.Option;
 
 public interface OptionMapper extends BaseMapper<Option> {
 	
-	String getOptionValue(String name);
+	String getOptionValue(String id);
 
 	/**
 	 * 以select .. for update,注意此方法须在事务中执行
@@ -12,5 +12,5 @@ public interface OptionMapper extends BaseMapper<Option> {
 	 * @param name
 	 * @return
 	 */
-	String getOptionValueForUpdate(String name);
+	String getOptionValueForUpdate(String id);
 }

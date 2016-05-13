@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
       "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.tongzhuogame.iblog.mapper.CommentMapper">
+<mapper namespace="com.iblog.mapper.CommentMapper">
 
    <select id="loadById" parameterType="java.lang.String" resultType="Comment">  
       select id, postId, parent, email, url, ip, agent, content, status, creator, createTime from comment where id = #{id}

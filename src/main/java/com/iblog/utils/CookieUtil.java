@@ -94,7 +94,7 @@ public class CookieUtil {
 		response.addCookie(cookie);
 	}
 
-	public void removeCokie(String name) {
+	public void removeCookie(String name) {
 		setCookie(name, null, false, 0);
 	}
 
