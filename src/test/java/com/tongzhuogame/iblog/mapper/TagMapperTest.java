@@ -12,7 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.tongzhuogame.iblog.entity.Tag;
+import com.iblog.entity.Tag;
+import com.iblog.mapper.TagMapper;
 
 public class TagMapperTest {
 	@Autowired

@@ -7,7 +7,7 @@
 
 	<!-- 默认的注解映射的支持 -->  
     <mvc:annotation-driven validator="validator" conversion-service="conversion-service" />
-	<context:component-scan base-package="com.tongzhuogame.iblog.controller"/>
+	<context:component-scan base-package="com.iblog.controller"/>
 	
 	<!-- 忽略静态资源 -->
 	<mvc:resources mapping="/resources/**" location="/resources/" />  

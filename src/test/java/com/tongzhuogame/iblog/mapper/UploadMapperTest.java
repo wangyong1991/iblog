@@ -11,7 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.tongzhuogame.iblog.entity.Upload;
+import com.iblog.entity.Upload;
+import com.iblog.mapper.UploadMapper;
 
 public class UploadMapperTest {
 

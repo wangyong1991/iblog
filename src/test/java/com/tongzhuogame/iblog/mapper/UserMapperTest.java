@@ -11,8 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.tongzhuogame.iblog.constants.UserConstants;
-import com.tongzhuogame.iblog.entity.User;
+import com.iblog.constants.UserConstants;
+import com.iblog.entity.User;
+import com.iblog.mapper.UserMapper;
 
 public class UserMapperTest {
 
