@@ -18,7 +18,6 @@ import com.iblog.entity.User;
 import com.iblog.form.LoginForm;
 import com.iblog.service.UserService;
 import com.iblog.support.CookieRemberManager;
-import com.iblog.support.WebContextFactory;
 import com.iblog.utils.Constants;
 import com.iblog.utils.CookieUtil;
 import com.iblog.utils.ServletUtils;
@@ -29,6 +28,11 @@ public class BackendController {
 
 	@Autowired
 	private UserService userService;
+	
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public String index(){
+		return "/backend/index";
+	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(Model model) {
@@ -65,7 +69,7 @@ public class BackendController {
 		CookieRemberManager.loginSuccess(request, response, user.getId(), user.getPassword(), form.isRemeber());
 
 		// 这里省略注册代码
-		return "redirect:backend/index";
+		return "redirect:/backend/index";
 	}
 
 	@RequestMapping(value = "/logout")
@@ -78,6 +82,6 @@ public class BackendController {
 		cookieUtil.removeCookie(Constants.COOKIE_COMMENT_AUTHOR_EMAIL);
 		cookieUtil.removeCookie(Constants.COOKIE_COMMENT_AUTHOR_URL);
 
-		return "redirect:/backend/login?msg=logout";
+		return "redirect:backend/login?msg=logout";
 	}
 }

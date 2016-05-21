@@ -11,7 +11,7 @@
 	<div id="login" class="clearfix">
 		<c:if test="${msg!=null}"><p class="message">${msg}<br></p></c:if>
 		<div id="logo">
-			<img title="iBlog" src="./../resource/img/logo.png" />
+			<img title="iBlog" src="/iblog/resource/img/logo.png" />
 			<p><a href="${g.domain}" title="不知道自己在哪">&lt;-回到${g.title}</a>
 		</div>
 		<form id="loginform" method="post">

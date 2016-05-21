@@ -24,12 +24,12 @@
     <mapper resource="mybatis/UserMapper.xml" />
     <mapper resource="mybatis/UploadMapper.xml" />
     <mapper resource="mybatis/TagMapper.xml" />
+    <mapper resource="mybatis/OptionMapper.xml" />
     <!-- 
     <mapper resource="mybatis/CategoryMapper.xml" />
     <mapper resource="mybatis/PostMapper.xml" />
     <mapper resource="mybatis/LinkMapper.xml" />
     <mapper resource="mybatis/CommentMapper.xml" />
-    <mapper resource="mybatis/OptionMapper.xml" />
      -->
   </mappers>
 </configuration>
